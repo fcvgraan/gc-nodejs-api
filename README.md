@@ -1,4 +1,4 @@
-# rh-gc-api
+# gc-nodejs-api
 nodejs google cloud function api for CRUD operations
 
 * you can deploy the code to google cloud with the deploy.sh script, follow deployment instructions in deployment instructions.txt
