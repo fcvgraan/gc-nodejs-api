@@ -4,6 +4,4 @@ Download Postman here: https://www.postman.com/downloads/
 
 Import the file gc-nodejs-api.postman_collection.json using the import button or file >> import
 
-Launch collection runner by clicking on the runner button
-
-Select the imported collection and run all the tests by clicking on Start run
+Launch collection runner by clicking on the runner button or test manually 
