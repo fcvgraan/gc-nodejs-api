@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "7c11631b-1a67-4d2a-bde1-14d80a5c1096",
+		"name": "gc-nodejs-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"database\": \"data\",\"collection\": \"types\",\"method\": \"get\"}"
+				},
+				"url": {
+					"raw": "https://europe-west1-gc-nodejs-api-v1.cloudfunctions.net/nodejs-mongodb-atlas-api",
+					"protocol": "https",
+					"host": [
+						"europe-west1-gc-nodejs-api-v1",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"nodejs-mongodb-atlas-api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"database\": \"data\",\"collection\": \"types\",\"method\": \"put\",\"item\":{\"value\":\"Noun2\"},\"itemId\":\"Noun\"}"
+				},
+				"url": {
+					"raw": "https://europe-west1-gc-nodejs-api-v1.cloudfunctions.net/nodejs-mongodb-atlas-api",
+					"protocol": "https",
+					"host": [
+						"europe-west1-gc-nodejs-api-v1",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"nodejs-mongodb-atlas-api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"database\": \"data\",\"collection\": \"types\",\"method\": \"post\",\"item\":{\"value\":\"Noun3\"}}"
+				},
+				"url": {
+					"raw": "https://europe-west1-gc-nodejs-api-v1.cloudfunctions.net/nodejs-mongodb-atlas-api",
+					"protocol": "https",
+					"host": [
+						"europe-west1-gc-nodejs-api-v1",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"nodejs-mongodb-atlas-api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"database\": \"data\",\"collection\": \"types\",\"method\": \"delete\", \"itemId\": \"Noun3\"}"
+				},
+				"url": {
+					"raw": "https://europe-west1-gc-nodejs-api-v1.cloudfunctions.net/nodejs-mongodb-atlas-api",
+					"protocol": "https",
+					"host": [
+						"europe-west1-gc-nodejs-api-v1",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"nodejs-mongodb-atlas-api"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
